@@ -1,0 +1,94 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+
+body {
+  background-color: white;
+  
+}
+
+/* create tan background */
+.outsideClock {
+  height: 300px;
+  width: 550px;
+  border-radius: 25px;
+  background-color: #DEB887;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  transform: translate(-40%, 50%);
+  z-index: 2;
+}
+
+/* create grey background */
+#innerClock {
+  height: 115px;
+  width: 375px;
+  background-color:#696969;
+  color: whitesmoke;
+  border-radius: 25px;
+  padding:50px;
+  text-align: center;
+}
+
+
+/* set date and time */
+#insideClock {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 56px;
+}
+
+#date {
+  font-family:'Orbitron', sans-serif;
+  font-size: 2rem;
+  float: top;
+  padding-top: 40px;
+  padding-right: 45px;
+}
+
+/* create legs */
+#leftLeg {
+  position: relative;
+  background-color: black;
+  height: 25px;
+  width: 15px;
+  transform: translate(3000%, 565%) rotate(20deg);
+  z-index:-1;
+}
+#leftLeg:after {
+  content: " ";
+  height: 25px;
+  width: 15px;
+  transform: translate(40%, 57%) rotate(60deg);
+  background-color: white;
+  float: left;
+}
+#rightLeg {
+  position: relative;
+  background-color: black;
+  height: 25px;
+  width: 15px;
+  transform: translate(5200%, 465%) rotate(-20deg);
+  z-index: -1;
+}
+#rightLeg:after {
+  content: " ";
+  height: 25px;
+  width: 15px;
+  transform: translate(-37%, 57%) rotate(-60deg);
+  background-color: white;
+  float: right;
+}
+
+/* create stop button */
+#redStopButton {
+  position: relative;
+  top: -215px;
+  left: 43%;
+  height: 15px;
+  width: 90px;
+  background-color: red;
+  border-radius: 50% / 100%;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
